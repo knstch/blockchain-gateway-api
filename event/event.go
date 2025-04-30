@@ -1,5 +1,7 @@
 package event
 
+import "encoding/json"
+
 type TransactionFromSubscribedContract struct {
-	Transaction []byte
+	Transaction json.RawMessage `json:"transaction"`
 }
